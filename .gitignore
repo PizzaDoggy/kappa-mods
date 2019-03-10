@@ -22,7 +22,6 @@ test
 .idea/
 build/
 classes/
-gradle/
 kappa.iml
 kappa.ipr
 kappa.iws

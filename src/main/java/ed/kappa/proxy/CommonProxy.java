@@ -32,9 +32,9 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(new ItemBlock(ModBlocks.grinder).setRegistryName(ModBlocks.grinder.getRegistryName()));
+        event.getRegistry().register(new ItemBlock(Blocks.grinder).setRegistryName(Blocks.grinder.getRegistryName()));
         event.getRegistry().register(new ItemWand());
-        event.getRegistry().register(new ItemHemp());
+        event.getRegistry().register(new ItemBase("hemp"));
     }
 }
 
