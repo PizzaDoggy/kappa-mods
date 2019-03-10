@@ -1,7 +1,7 @@
 package ed.kappa.proxy;
 
-import ed.kappa.init.ModBlocks;
-import ed.kappa.init.ModItems;
+import ed.kappa.blocks.KappaBlocks;
+import ed.kappa.items.KappaItems;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -17,8 +17,8 @@ public class ClientProxy extends CommonProxy {
 
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
-        ModBlocks.initModels();
-        ModItems.initModels();
+        KappaBlocks.initModels();
+        KappaItems.initModels();
     }
 }
 

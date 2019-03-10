@@ -1,6 +1,6 @@
 package ed.kappa;
 
-import ed.kappa.items.Items;
+import ed.kappa.items.KappaItems;
 import ed.kappa.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
@@ -23,7 +23,7 @@ public class Kappa {
 
     public static CreativeTabs creativeTab = new CreativeTabs("kappa") {
         @Override
-        public ItemStack createIcon() { return new ItemStack(Items.hemp); }
+        public ItemStack createIcon() { return new ItemStack(KappaItems.hemp); }
     };
 
     @Mod.Instance

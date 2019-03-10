@@ -1,9 +1,10 @@
 package ed.kappa.proxy;
 
 import ed.kappa.blocks.BlockGrinder;
-import ed.kappa.items.ItemHemp;
+import ed.kappa.Kappa;
+import ed.kappa.items.ItemBase;
 import ed.kappa.items.ItemWand;
-import ed.kappa.init.ModBlocks;
+import ed.kappa.blocks.KappaBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -32,7 +33,7 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(new ItemBlock(Blocks.grinder).setRegistryName(Blocks.grinder.getRegistryName()));
+        event.getRegistry().register(new ItemBlock(KappaBlocks.grinder).setRegistryName(KappaBlocks.grinder.getRegistryName()));
         event.getRegistry().register(new ItemWand());
         event.getRegistry().register(new ItemBase("hemp"));
     }
