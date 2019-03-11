@@ -11,15 +11,31 @@ public class KappaItems {
     public static ItemWand wand;
     @GameRegistry.ObjectHolder("kappa:hemp")
     public static ItemBase hemp;
+    @GameRegistry.ObjectHolder("kappa:rope")
+    public static ItemBase rope;
+    @GameRegistry.ObjectHolder("kappa:flour")
+    public static ItemBase flour;
+    @GameRegistry.ObjectHolder("kappa:rock")
+    public static ItemRock rock;
+    @GameRegistry.ObjectHolder("kappa:gear")
+    public static ItemBase gear;
 
     @SideOnly(Side.CLIENT)
     public static void initModels() {
         wand.initModel();
         hemp.initModel();
+        rope.initModel();
+        flour.initModel();
+        rock.initModel();
+        gear.initModel();
     }
 
     public static void register(IForgeRegistry<Item> registry) {
         registry.register(new ItemWand());
         registry.register(new ItemBase("hemp"));
+        registry.register(new ItemBase("rope"));
+        registry.register(new ItemBase("flour"));
+        registry.register(new ItemRock());
+        registry.register(new ItemBase("gear"));
     }
 }

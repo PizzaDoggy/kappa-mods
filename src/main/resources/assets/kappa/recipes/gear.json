@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " / ",
+        "/w/",
+        " / "
+    ],
+    "key": {
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "w": {
+            "item": "minecraft:planks",
+            "data": 32767
+        }
+    },
+    "result": {
+        "item": "kappa:gear"
+    }
+}
+
