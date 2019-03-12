@@ -13,7 +13,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class BlockBase extends Block {
     public BlockBase(String name, Material material) {
         super(material);
-        setRegistryName(new ResourceLocation(Kappa.MODID,name));
+        setRegistryName(new ResourceLocation(Kappa.MODID, name));
         setTranslationKey(Kappa.MODID + "." + name);
         setCreativeTab(Kappa.creativeTab);
     }
@@ -22,5 +22,4 @@ public class BlockBase extends Block {
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     }
-
 }

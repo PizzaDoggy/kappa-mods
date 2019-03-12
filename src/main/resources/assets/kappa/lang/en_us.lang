@@ -1,5 +1,11 @@
 tile.kappa.grinder.name=Grinder
+tile.kappa.crank.name=Crank
+
 item.kappa.wand.name=Wizard's Wand
 item.kappa.hemp.name=Hemp
+item.kappa.rope.name=Rope
+item.kappa.flour.name=Flour
+item.kappa.rock.name=Rock
+item.kappa.gear.name=Gear
 
 itemGroup.kappa=Kappa

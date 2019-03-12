@@ -1,13 +1,16 @@
 package ed.kappa.proxy;
 
-import ed.kappa.blocks.BlockGrinder;
 import ed.kappa.Kappa;
+import ed.kappa.blocks.BlockCrank;
+import ed.kappa.blocks.grinder.BlockGrinder;
+import ed.kappa.blocks.grinder.TileGrinder;
 import ed.kappa.items.ItemBase;
 import ed.kappa.items.ItemRock;
 import ed.kappa.items.ItemWand;
 import ed.kappa.blocks.KappaBlocks;
 import ed.kappa.items.KappaItems;
 import net.minecraft.block.Block;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
@@ -27,6 +30,7 @@ public class CommonProxy {
     }
 
     public void init(FMLInitializationEvent e) {
+        NetworkRegistry.INSTANCE.registerGuiHandler(Kappa.instance, new GuiProxy());
         GameRegistry.addSmelting(new ItemStack(KappaItems.flour), new ItemStack(Items.BREAD), 1.0f);
     }
 
@@ -36,11 +40,14 @@ public class CommonProxy {
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().register(new BlockGrinder());
+        event.getRegistry().register(new BlockCrank());
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().register(new ItemBlock(KappaBlocks.grinder).setRegistryName(KappaBlocks.grinder.getRegistryName()));
+        GameRegistry.registerTileEntity(TileGrinder.class, new ResourceLocation(Kappa.MODID,"grinder"));
+        event.getRegistry().register(new ItemBlock(KappaBlocks.crank).setRegistryName(KappaBlocks.crank.getRegistryName()));
         event.getRegistry().register(new ItemWand());
         event.getRegistry().register(new ItemBase("hemp"));
         event.getRegistry().register(new ItemBase("rope"));
