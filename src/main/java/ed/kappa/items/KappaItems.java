@@ -19,6 +19,8 @@ public class KappaItems {
     public static ItemRock rock;
     @GameRegistry.ObjectHolder("kappa:gear")
     public static ItemBase gear;
+    @GameRegistry.ObjectHolder("kappa:hemp_seeds")
+    public static ItemHempSeed hemp_seeds;
 
     @SideOnly(Side.CLIENT)
     public static void initModels() {
@@ -28,6 +30,7 @@ public class KappaItems {
         flour.initModel();
         rock.initModel();
         gear.initModel();
+        hemp_seeds.initModel();
     }
 
     public static void register(IForgeRegistry<Item> registry) {
@@ -37,5 +40,7 @@ public class KappaItems {
         registry.register(new ItemBase("flour"));
         registry.register(new ItemRock());
         registry.register(new ItemBase("gear"));
+        registry.register(new ItemHempSeed());
+
     }
 }

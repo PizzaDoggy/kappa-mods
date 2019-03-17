@@ -12,15 +12,19 @@ public class KappaBlocks {
     public static BlockGrinder grinder;
     @GameRegistry.ObjectHolder("kappa:crank")
     public static BlockCrank crank;
+    @GameRegistry.ObjectHolder("kappa:hemp_crop")
+    public static BlockHempCrop hemp_crop;
 
     @SideOnly(Side.CLIENT)
     public static void initModels() {
         grinder.initModel();
         crank.initModel();
+        hemp_crop.initModel();
     }
 
     public static void register(IForgeRegistry<Block> registry) {
         registry.register(new BlockGrinder());
         registry.register(new BlockCrank());
+        registry.register(new BlockHempCrop("hemp_crop"));
     }
 }
