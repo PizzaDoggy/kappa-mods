@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " r ",
+        "rsr",
+        " r "
+    ],
+    "key": {
+        "r": {
+            "item": "kappa:rock"
+        },
+        "s": {
+            "item": "minecraft:stone",
+            "data": 0
+        }
+    },
+    "result": {
+        "item": "kappa:grinding_stone"
+    }
+}
+

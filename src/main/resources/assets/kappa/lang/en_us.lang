@@ -1,12 +1,14 @@
 tile.kappa.grinder.name=Grinder
 tile.kappa.crank.name=Crank
 
-item.kappa.hemp_seeds.name=Hemp Seeds
 item.kappa.wand.name=Wizard's Wand
 item.kappa.hemp.name=Hemp
+item.kappa.hemp_seeds.name=Hemp Seeds
+item.kappa.hemp_fibers.name=Hemp Fibers
 item.kappa.rope.name=Rope
 item.kappa.flour.name=Flour
 item.kappa.rock.name=Rock
 item.kappa.gear.name=Gear
+item.kappa.grinding_stone.name=Grinding Stone
 
 itemGroup.kappa=Kappa

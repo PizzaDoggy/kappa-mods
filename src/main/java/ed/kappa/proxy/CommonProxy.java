@@ -48,12 +48,14 @@ public class CommonProxy {
         GameRegistry.registerTileEntity(TileGrinder.class, new ResourceLocation(Kappa.MODID,"grinder"));
         event.getRegistry().register(new ItemBlock(KappaBlocks.crank).setRegistryName(KappaBlocks.crank.getRegistryName()));
         event.getRegistry().register(new ItemWand());
-        event.getRegistry().register(new ItemHempSeed());
         event.getRegistry().register(new ItemBase("hemp"));
+        event.getRegistry().register(new ItemHempSeed());
+        event.getRegistry().register(new ItemBase("hemp_fibers"));
         event.getRegistry().register(new ItemBase("rope"));
         event.getRegistry().register(new ItemBase("flour"));
         event.getRegistry().register(new ItemRock());
         event.getRegistry().register(new ItemBase("gear"));
+        event.getRegistry().register(new ItemBase("grinding_stone"));
     }
 }
 

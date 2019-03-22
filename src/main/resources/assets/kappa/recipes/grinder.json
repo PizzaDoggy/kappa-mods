@@ -1,16 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "s/s",
+    "sgs",
     "sgs",
     "sss"
   ],
   "key": {
-    "/": {
-      "item": "minecraft:stick"
-    },
     "g": {
-      "item": "kappa:gear"
+      "item": "kappa:grinding_stone"
     },
     "s": {
       "item": "minecraft:cobblestone"

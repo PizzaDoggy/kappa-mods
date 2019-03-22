@@ -24,7 +24,7 @@ public class RecipesGrinder {
     private RecipesGrinder() {
         this.addGrinderRecipeForBlock(Blocks.COBBLESTONE, new ItemStack(KappaItems.rock), 0.5F);
         this.addGrinderRecipeForBlock(Blocks.STONE, new ItemStack(Blocks.COBBLESTONE), 0.5F);
-        this.addGrinder(KappaItems.hemp, new ItemStack(KappaItems.rope), .5F);
+        this.addGrinder(KappaItems.hemp, new ItemStack(KappaItems.hemp_fibers), .5F);
         this.addGrinder(Items.WHEAT, new ItemStack(KappaItems.flour), .5F);
     }
 
